@@ -4,3 +4,41 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "concepts"
+version = "0.5.1"
+description = "A Concept-Centric Framework for Intelligent Agents"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Jiayuan Mao" }
+]
+dependencies = [
+    'six',
+    'Cython',
+    'pkgconfig',
+    'ipdb',
+    'tabulate',
+    'numpy',
+    'scipy',
+    'matplotlib',
+    'torch',
+    'torchvision',
+    'tqdm',
+    'lark',
+    'nltk',
+    'Pillow'
+]
+
+[project.urls]
+Repository = "https://github.com/jama1017/Concepts"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["concepts", "concepts.*"]
+exclude = ["tests*", "examples*"]
