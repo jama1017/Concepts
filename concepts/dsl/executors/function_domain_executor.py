@@ -47,7 +47,7 @@ class FunctionDomainExecutor(DSLExecutorBase):
             if not function.is_derived:
                 if hasattr(self, function_name):
                     self.register_function(function_name, self.unwrap_values(getattr(self, function_name)))
-                    logger.info('Function {} automatically registered.'.format(function_name))
+                    # logger.info('Function {} automatically registered.'.format(function_name))
 
         self._grounding = None
 

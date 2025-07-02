@@ -721,7 +721,7 @@ class FunctionApplicationExpression(ValueOutputExpression):
                 pass
             print(error_header)
             print(e)
-            import ipdb; ipdb.set_trace()
+            # import ipdb; ipdb.set_trace()
             raise TypeError(error_header + str(e)) from e
 
     @property
